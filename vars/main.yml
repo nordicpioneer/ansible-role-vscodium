@@ -1,2 +1,12 @@
 ---
 # vars file for vscodium
+vscodium_extensions:
+  - vscodevim.vim                               # start functional extensions
+  - ms-toolsai.jupyter
+  - ms-python.python
+  - ms-python.debugpy
+  - quarto.quarto
+  - REditorSupport.r
+  - RDebugger.r-debugger                        # end functional extensions
+  - ginfuru.ginfuru-better-solarized-dark-theme # start themes extensions
+  - GitHub.github-vscode-theme                  # end themes extensions

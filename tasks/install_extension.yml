@@ -5,8 +5,10 @@
   register: _list_extensions
   changed_when: false
   run_once: true
+  become: false
 
 - name: "Install_extension | Install {{ vscodium_extension_name }}"
   ansible.builtin.command:
     cmd: "codium --install-extension {{ vscodium_extension_name }}"
   when: vscodium_extension_name not in _list_extensions.stdout_lines | lower
+  become: false
